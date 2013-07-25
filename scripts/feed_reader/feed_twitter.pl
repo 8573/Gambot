@@ -41,6 +41,7 @@ foreach my $current_feed (@feed_array) {
     my $data_date = "$2-$1-$3";
     my $data_time = "$4:$5";
     $data_title =~ s/^$data_author: //;
+    $data_link =~ s/^http:/https:/;
 
     if(&check_new($data_site,$current_feed,$item_id)) {
       &commit_entry($data_site,$current_feed,$item_id);
