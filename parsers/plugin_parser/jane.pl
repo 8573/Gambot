@@ -72,6 +72,7 @@ sub on_public_message {
   runPlugin("$FindBin::Bin/plugins/actions.pm");
   runPlugin("$FindBin::Bin/plugins/temperature.pm");
   runPlugin("$FindBin::Bin/plugins/time.pm");
+  runPlugin("$FindBin::Bin/plugins/memo.pm");
 
   runPlugin("$FindBin::Bin/plugins/staff/joinpart.pm");
   runPlugin("$FindBin::Bin/plugins/staff/speak.pm");

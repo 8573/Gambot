@@ -30,6 +30,7 @@ sub on_public_message {
   runPlugin("$FindBin::Bin/plugins/actions.pm");
   runPlugin("$FindBin::Bin/plugins/temperature.pm");
   runPlugin("$FindBin::Bin/plugins/time.pm");
+  runPlugin("$FindBin::Bin/plugins/memo.pm");
 
   runPlugin("$FindBin::Bin/plugins/conversation/ed-block.pm");
   runPlugin("$FindBin::Bin/plugins/conversation/memes.pm");
